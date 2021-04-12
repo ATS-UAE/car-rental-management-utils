@@ -1,5 +1,5 @@
 {
-	"name": "car-rental-management-shared",
+	"name": "car-rental-management-utils",
 	"version": "1.0.0",
 	"description": "",
 	"main": "dist/index.js",
@@ -16,14 +16,14 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/ATS-UAE/car-rental-management-shared.git"
+		"url": "git+https://github.com/ATS-UAE/car-rental-management-utils.git"
 	},
 	"author": "Ramil Amparo",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/ATS-UAE/car-rental-management-shared/issues"
+		"url": "https://github.com/ATS-UAE/car-rental-management-utils/issues"
 	},
-	"homepage": "https://github.com/ATS-UAE/car-rental-management-shared#readme",
+	"homepage": "https://github.com/ATS-UAE/car-rental-management-utils#readme",
 	"devDependencies": {
 		"@types/jest": "^26.0.22",
 		"@types/moxios": "^0.4.10",
