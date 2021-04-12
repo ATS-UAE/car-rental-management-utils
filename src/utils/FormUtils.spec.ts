@@ -1,7 +1,6 @@
-import { AxiosError } from "axios";
 import { ValidationError } from "yup";
-import { StatusCode } from "car-rental-management-shared";
-import { FormUtils } from "./FormUtils";
+import { StatusCode, ServerResponseMeta } from "car-rental-management-shared";
+import { FormUtils, AxiosError } from "./FormUtils";
 
 describe("FormUtils", () => {
 	it("Extracts errors from a yup validation error.", () => {
@@ -26,7 +25,7 @@ describe("FormUtils", () => {
 					success: false
 				}
 			}
-		} as AxiosError);
+		} as AxiosError<ServerResponseMeta>);
 
 		expect(apiErrors.form).toHaveLength(1);
 		expect(apiErrors.form[0]).toEqual("TEST");

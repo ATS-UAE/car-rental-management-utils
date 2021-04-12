@@ -2,8 +2,10 @@ import { ValidationError } from "yup";
 import _ from "lodash";
 import { ServerResponseMeta } from "car-rental-management-shared";
 
-type FieldErrors<Values extends object> = Partial<Record<keyof Values, string>>;
-interface AxiosError<T> extends Error {
+export type FieldErrors<Values extends object> = Partial<
+	Record<keyof Values, string>
+>;
+export interface AxiosError<T> extends Error {
 	response?: {
 		data: T;
 	};
