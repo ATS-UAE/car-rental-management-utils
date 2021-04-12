@@ -27,25 +27,30 @@ export abstract class DateUtils {
 		return format(DateUtils.getDate(date), LONG_DATE_FORMAT);
 	};
 
-	public static relativeFromNow = (date: Date | number) => formatRelative(DateUtils.getDate(date), new Date());
+	public static relativeFromNow = (date: Date | number) =>
+		formatRelative(DateUtils.getDate(date), new Date());
 
 	public static getDateFromUnixTimestamp = (unix: number) => fromUnixTime(unix);
 
 	public static getUnixTimestampFromDate = (date: Date) => getUnixTime(date);
 
-	public static dateIsBefore = (date: Date, compare: Date) => isBefore(date, compare);
+	public static dateIsBefore = (date: Date, compare: Date) =>
+		isBefore(date, compare);
 
-	public static dateIsAfter = (date: Date, compare: Date) => isAfter(date, compare);
+	public static dateIsAfter = (date: Date, compare: Date) =>
+		isAfter(date, compare);
 
 	public static doesDateIntervalOverlaps = (
 		interval1: DateInterval,
 		interval2: DateInterval
-	) => MathUtils.rangeOverlap(
+	) =>
+		MathUtils.rangeOverlap(
 			interval1.start.valueOf(),
 			interval1.end.valueOf(),
 			interval2.start.valueOf(),
 			interval2.end.valueOf()
 		);
 
-	public static addSecondsToDate = (date: Date, seconds: number) => addSeconds(date, seconds);
+	public static addSecondsToDate = (date: Date, seconds: number) =>
+		addSeconds(date, seconds);
 }

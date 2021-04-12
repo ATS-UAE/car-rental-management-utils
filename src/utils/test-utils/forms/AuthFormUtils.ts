@@ -4,9 +4,9 @@ export abstract class AuthFormUtils {
 	public static createFormValues = (
 		overrides?: Partial<AuthFormValidatorLoginValues>
 	): AuthFormValidatorLoginValues => ({
-			username: "test",
-			password: "12345678",
-			remember: false,
-			...overrides
-		});
+		username: "test",
+		password: "12345678",
+		remember: false,
+		...overrides
+	});
 }

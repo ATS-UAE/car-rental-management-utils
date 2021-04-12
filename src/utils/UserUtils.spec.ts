@@ -1,5 +1,5 @@
-import { UserUtils } from "./UserUtils";
 import { Role } from "car-rental-management-shared";
+import { UserUtils } from "./UserUtils";
 
 describe("UserUtils", () => {
 	describe("is role better comparation.", () => {
