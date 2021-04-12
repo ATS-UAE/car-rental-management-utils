@@ -19,3 +19,4 @@ __exportStar(require("./StringUtils"), exports);
 __exportStar(require("./UserUtils"), exports);
 var FormUtils_1 = require("./FormUtils");
 Object.defineProperty(exports, "FormUtils", { enumerable: true, get: function () { return FormUtils_1.FormUtils; } });
+__exportStar(require("./validators/forms"), exports);

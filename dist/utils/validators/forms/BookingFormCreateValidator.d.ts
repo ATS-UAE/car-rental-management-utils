@@ -1,4 +1,5 @@
 import { BookingAttributes, BookingType, DatePropsToUnix } from "car-rental-management-shared";
+import { FieldErrors } from "../../FormUtils";
 export declare type UserBookings = Pick<DatePropsToUnix<BookingAttributes>, "from" | "to" | "userId" | "bookingType">;
 export interface BookingCreateFormValues {
     vehicleId: number;
@@ -13,7 +14,7 @@ export interface BookingCreateFormValues {
     locationId: number;
 }
 export declare abstract class BookingFormCreateValidator {
-    static validate: (values: Partial<BookingCreateFormValues>, bookings: UserBookings[]) => any;
+    static validate: (values: Partial<BookingCreateFormValues>, bookings: UserBookings[]) => FieldErrors<BookingCreateFormValues>;
     private static useReplacementBookingFields;
     private static canUserBookVehiclesOn;
     private static formBookingCreateValidationSchema;

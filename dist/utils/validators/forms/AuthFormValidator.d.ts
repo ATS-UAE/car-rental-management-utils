@@ -1,3 +1,4 @@
+import { FieldErrors } from "../../FormUtils";
 export interface AuthFormValidatorLoginValues {
     username: string;
     password: string;
@@ -5,5 +6,5 @@ export interface AuthFormValidatorLoginValues {
 }
 export declare abstract class AuthFormValidator {
     private static loginFormValidation;
-    static validateLogin: (values: Partial<AuthFormValidatorLoginValues>) => any;
+    static validateLogin: (values: Partial<AuthFormValidatorLoginValues>) => FieldErrors<AuthFormValidatorLoginValues>;
 }
