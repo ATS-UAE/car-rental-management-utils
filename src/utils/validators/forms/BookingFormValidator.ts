@@ -1,4 +1,4 @@
-import { FieldErrors } from "react-form";
+import { FieldErrors } from "../../FormUtils";
 import {
 	BookingFormCreateValidator,
 	BookingCreateFormValues,

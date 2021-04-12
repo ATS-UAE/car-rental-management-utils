@@ -1,4 +1,3 @@
-import { FieldErrors } from "react-form";
 import { BookingAttributes, BookingType, DatePropsToUnix } from "car-rental-management-shared";
 export declare type UserBookings = Pick<DatePropsToUnix<BookingAttributes>, "from" | "to" | "userId" | "bookingType">;
 export interface BookingCreateFormValues {
@@ -14,7 +13,7 @@ export interface BookingCreateFormValues {
     locationId: number;
 }
 export declare abstract class BookingFormCreateValidator {
-    static validate: (values: Partial<BookingCreateFormValues>, bookings: UserBookings[]) => FieldErrors<BookingCreateFormValues>;
+    static validate: (values: Partial<BookingCreateFormValues>, bookings: UserBookings[]) => any;
     private static useReplacementBookingFields;
     private static canUserBookVehiclesOn;
     private static formBookingCreateValidationSchema;

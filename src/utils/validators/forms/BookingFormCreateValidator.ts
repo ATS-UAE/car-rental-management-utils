@@ -1,13 +1,13 @@
 import * as yup from "yup";
-import { FieldErrors } from "react-form";
 import {
 	BookingAttributes,
 	BookingType,
 	DatePropsToUnix,
 	UserAttributes
 } from "car-rental-management-shared";
+import { FieldErrors , FormUtils } from "../../FormUtils";
 import { DateUtils } from "../../DateUtils";
-import { FormUtils } from "../../FormUtils";
+
 
 export type UserBookings = Pick<
 	DatePropsToUnix<BookingAttributes>,

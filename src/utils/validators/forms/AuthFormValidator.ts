@@ -1,6 +1,5 @@
-import { FieldErrors } from "react-form";
 import * as yup from "yup";
-import { FormUtils } from "../../FormUtils";
+import { FormUtils, FieldErrors } from "../../FormUtils";
 
 export interface AuthFormValidatorLoginValues {
 	username: string;
