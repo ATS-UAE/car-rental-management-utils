@@ -1,8 +1,14 @@
 import { ValidationError } from "yup";
-import { FieldErrors } from "react-form";
 import _ from "lodash";
-import { AxiosError } from "axios";
 import { ServerResponseMeta } from "car-rental-management-shared";
+
+type FieldErrors<Values extends object> = Partial<Record<keyof Values, string>>;
+interface AxiosError<T> extends Error {
+	response?: {
+		data: T;
+	};
+	isAxiosError: boolean;
+}
 
 export abstract class FormUtils {
 	public static getFieldErrorsFromYupValidationError = <Values extends object>(
