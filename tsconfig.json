@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"module": "commonjs",
+		"strict": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"declaration": true,
+		"lib": ["ES2015", "dom"],
+		"allowSyntheticDefaultImports": true,
+		"allowJs": false,
+		"outDir": "dist",
+		"rootDirs": ["src/typings", "src/utils"]
+	}
+}
